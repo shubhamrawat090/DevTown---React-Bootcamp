@@ -1,0 +1,70 @@
+// LINK FOR PROJECT: https://codesandbox.io/s/sweet-cookies-v4hjoo?file=/intro-to-node/index.js
+
+	
+		// ONLINE IDE - with automatic deployment : codesandbox.io
+
+pwd - present working directory
+
+mkdir <folderName> - make directory
+
+ls - list all the files and folder inside current directory
+
+touch <fileName.extension> - creates a new file like "index.js" 
+
+node index.js - run javascript code inside the file index.js
+
+node - go into REPL(read evaluation print line) mode where you run line by line javascript just like browser console
+
+ctrl + c (TWICE) or .exit - to exit out of REPL mode
+
+
+
+		//NODE MODULES
+
+const fs = require("fs");  - importing filesystem module to use it
+
+fs.copyFileSync("file1.txt", "file2.txt"); - copies content of file1.txt to file2.txt
+
+		// Initialize npm package
+
+npm init; - creates a file package.json with the details provides by us; we can use npm now
+
+
+
+		//Using a npm package SUPERVILLIANS created by someone online
+
+npm i supervillains - Installing the package
+
+const supervillains = require("supervillains");
+
+console.log(supervillains.random()); // prints random supervillian name
+
+             // Install Express
+
+npm install express --save : --save is not required in versions above 5.0.0
+
+
+
+   		// 502 Bad Gateway error
+
+it is an error when we have not run the application using "node index.js" OR error on the developer/coder's end
+
+            // HTTP status ranges
+
+1xx: hold on, page is loading
+2xx: here you go, page is loaded
+3xx: go away, you don't have the authority to access this page
+4xx: you fucked up, website doesn't exist i.e. client entered wrong url
+5xx: I fucked up, server isn't working OR error caused by the backend developer
+
+           // nodemon
+npm install -g nodemon;  changes reflect automatically, we don't have to disconnect and re-run the server again to see changes.
+
+	     // __dirname
+console.log(__dirname); // __dirname gives exact path(directory name) where the file is located
+
+
+		// handline POST REQUESTS
+
+body-parser: converts the incoming POST data to a javascript understandable form
+			npm i body-parser

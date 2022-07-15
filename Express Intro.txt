@@ -1,0 +1,10 @@
+const express = require("express"); // import express
+
+const app = express(); // call the express package, you can name anything instead of "app", but we do it for best practices
+
+app.listen(3000, function () {
+  console.log("Server running on port: 3000");
+  //callback fn: it is nameless
+  //because it is not being used anywhere except for this app.listen() only,
+  //therefore, it doesn't require a name to be reused later
+}); // express listens to port 3000(available by default in the system) where the request will be coming from
